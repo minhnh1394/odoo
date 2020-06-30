@@ -1,2 +1,2 @@
-# odoo12
+# odoo
 Exam
