@@ -4,7 +4,6 @@
     'author': 'NHM',
     'web':'https://github.com/minhnh1394/student_app.git',
     'depends': ['base'],  
-    ádasdasd
     'license':'AGPL-3',
     'data': [
  
