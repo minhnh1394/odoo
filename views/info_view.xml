@@ -50,13 +50,13 @@
  
             
 
-     <!--       <filter name="filter_good" string="Good" domain="[('classification','=','Good')]"/>
-            <filter name="filter_average" string="Average" domain="[('classification','=','Average')]"/>
-            <filter name="filter_poor" string="Poor" domain="[('classification','=','Poor')]"/>
-            <filter name="filter_excellent" string="Excellent" domain="[('classification','=','Excellent)]"/> -->
+            <filter name="filter_good" string="Good" domain="[('classification','=','good')]"/>
+            <filter name="filter_average" string="Average" domain="[('classification','=','average')]"/>
+            <filter name="filter_poor" string="Poor" domain="[('classification','=','poor')]"/>
+            <filter name="filter_excellent" string="Excellent" domain="[('classification','=','excellent')]"/> 
             <group string="Group By">
                 <filter name="by_gender" string="Gender" context="{'group_by':'gender'}" />
-                
+                <filter name="by_classification" string="Classification" context="{'group_by':'classification'}" />
             </group>
 
         </search>
