@@ -9,7 +9,7 @@
         'security/student_security.xml',
         'security/ir.model.access.csv',
         'views/student_menu.xml',
-        'views/info_view.xml',
+        'views/student_info_view.xml',
     ],  
     'application': True, 
     'installable':True,

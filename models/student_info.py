@@ -1,9 +1,9 @@
 from odoo import api,fields, models
 
 
-class Info(models.Model):
+class StudentInfo(models.Model):
     _name='student.info'
-    _description='Infomation'  
+    _description='Student Information'  
 
     @api.multi
     @api.depends('gpa')
@@ -23,8 +23,8 @@ class Info(models.Model):
 
 
     name = fields.Char('Fullname',required=True)
-    student_id= fields.Char ('Student\'s id',required=True)
-    identification_number= fields.Char ('Passport')
+    student_id= fields.Char('Student\'s id',required=True)
+    identification_number= fields.Char('Passport')
     gender= fields.Selection([('male','Male'),('female','Female'),('other','Other')],default='male',string='Chose Gender')
     image=fields.Binary('Student\'s image')
     date_of_birth= fields.Date('Date of birth')
