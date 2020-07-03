@@ -31,6 +31,6 @@ class Info(models.Model):
     address= fields.Text('Student\'s address')
     phone= fields.Char('Phone number')
     gpa=fields.Float('Current GPA')
-    classification=fields.Selection([('excellent','Excellent'), ('good','Good'),('average','Average'),('poor','Poor')],default='poor',string='Classification',compute='set_classification')
+    classification=fields.Selection([('excellent','Excellent'), ('good','Good'),('average','Average'),('poor','Poor')],default='poor',string='Classification',compute='set_classification',store=True)
     notes= fields.Char('Internal notes')
 
